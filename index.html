@@ -1,7 +1,6 @@
 <html>
-
-<head>
-  <title>Realtime Image Identification</title>
+    <head>
+        <title>Realtime Image Identification</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -11,43 +10,39 @@
   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
-</head>
+    <body background="family_5.jfif">
 
-<body background="background.jpg">
+        <center>
+            <h3 class="heading">Realtime Face Identification
+            <hr>
+            <center>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+                    Model is trained on
+                    <br>
+                    <button class="heading-btn">
+                        Mother | Father | Son | Grandmother | Uncle
+                    </button>
+                </div>
+            </center>
+            <br><br>
 
-  <center>
-    <h3 class="btn btn-info heading">Realtime Image Identification
-    <hr>
-    <center>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
-        Model is trained on
-        <br>
-        <div class="btn btn-warning heading-div2">
-          Phone | Spoon | Water Bottle | Watch
+            <button class="btn_result"> Person:
+                <span id="result_person_name"></span>
+            </button>
+
+            <br><br>
+            <button class="btn_result">Accuracy:
+                <span class="result_person_accuracy"></span>
+            </button>
+            </h3>
+        </center>
+
+        <div class="copyright_footer">
+            <p>Created by - Taksheel Mohanty</p>
         </div>
-      </div>
-    </center>
-    <br><br>
 
-    <p class="btn btn-warning para_res_tag">Object: 
-      <span id="result_object_name"></span>
-    </p>
-
-    <br><br>
-    <p class="btn btn-warning para_res_tag">Accuracy:
-      <span id="result_accuracy_name"></span>
-    </p>
-    </h3>
-  </center>
-
-  <div id="copyright_footer">
-    <p>Created by - Taksheel Mohanty</p>
-  </div>
-
-<script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+    </body>
 </html>
-
-

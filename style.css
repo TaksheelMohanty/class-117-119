@@ -1,8 +1,9 @@
 .heading{
-    font-size: 23px;
+    font-size: 25px;
     width: 100%;
     margin: 0px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px black;
+    background: grey;
 }
 
 .heading_div{
@@ -11,33 +12,36 @@
     padding: 10px;
     border-radius: 20px;
     color: black;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px black;
 }
 
-.heading_div2{
+.heading-btn{
     font-size: 20px;
+    background: pink;
 }
 
-.para_res_tag{
+.btn_result{
     box-shadow: 5px 5px 5px grey;
-    font-size: 15px;
+    font-size: 20px;
+    background: pink;
 }
 
-#copyright_footer{
+.copyright_footer{
     background-color: grey;
-    color: white;
+    color: pink;
     width: 100%;
+    bottom: 0;
     line-height: 3;
     text-align: center;
     position: fixed;
-    bottom: 0;
 }
 
 canvas{
     box-shadow: 5px 5px 5px grey;
-    margin-top: 150px;
-    border-radius: 20px;
-    border-style:solid;
+    margin-top: 140px;
+    border-radius: 20px; 
+    border-style: solid;
     border-width: 5px;
-    border-color: red;
+    border-color: pink
+
 }

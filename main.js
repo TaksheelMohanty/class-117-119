@@ -3,7 +3,7 @@ function setup(){
     canvas.center();
     video = createCapture(VIDEO);
     video.hide();
-    classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/OZIygvNgy/model.json', modelLoaded);
+    classify = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/cXVyiscWX/', modelLoaded);
 }
 
 function modelLoaded(){
@@ -12,16 +12,16 @@ function modelLoaded(){
 
 function draw(){
     image(video, 0, 0, 300, 300);
-    classifier.classify(video, abcd);
+    classifier.classify(video, gotResult);
 }
 
-function abcd(error, results){
+function gotResult(results, error){
     if(error){
         console.log(error);
     }
     else{
         console.log(results);
-        document.getElementById("result_object_name").innerHTML = results[0].label;
-        document.getElementById("result_accuracy_name").innerHTML = results[0].confidence.toFixed(3);
+        document.getElementById("result_person_name").innerHTML = results[0].label;
+        document.getElementsByClassName("result_person_accuracy").innerHTML = results[0].confidence.toFixed(3);
     }
 }
